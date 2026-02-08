@@ -6,6 +6,6 @@
 - 大頭照
 
 #
-- style
-- link
-- aniamtion
+- Educatoin
+    - badge ilnk
+    -  hover
