@@ -57,12 +57,13 @@
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
+            <!-- Main Column -->
             <div class="md:col-span-2 space-y-6">
+                <!-- Cybersecurity Skill Tree -->
                 <section class="glass rounded-3xl p-8 space-y-4">
                     <div class="flex justify-between items-end">
                         <div>
-                            <h2 class="text-2xl font-bold text-sky-400">Cybersecurity</h2>
+                            <h2 class="text-2xl font-bold text-sky-400">資安技能樹</h2>
                             <!-- <p class="text-slate-400">具備跨平台系統管理與網路安全防護之核心能力</p> -->
                         </div>
                         <!-- <div class="text-right hidden md:block text-xs text-slate-500">
@@ -78,14 +79,16 @@
                         <div class="flex gap-4 opacity-60">
                             <div
                                 class="px-4 py-2 bg-slate-800 rounded-lg text-sm border border-slate-700 text-slate-400">
-                                <img src="../cybersecurity\certification\OIP2.webp" alt="CND"
-                                class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">                            
-                                EC-Council CND (Network Defense)</div>
+                                <img src="src/certification/eccouncil/cnd.webp" alt="CND"
+                                    class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
+                                EC-Council CND (Network Defense)
+                            </div>
                             <div
                                 class="px-4 py-2 bg-slate-800 rounded-lg text-sm border border-slate-700 text-slate-400">
-                                <img src="../cybersecurity\certification\OIP.webp" alt="CEH"
-                                class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
-                                EC-Council CEH (Ethical Hacking)</div>
+                                <img src="src/certification/eccouncil/ceh.webp" alt="CEH"
+                                    class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
+                                EC-Council CEH (Ethical Hacking)
+                            </div>
                         </div>
                     </div>
                     <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-slate-700">
@@ -111,7 +114,7 @@
                         <a href="https://www.credly.com/badges/c4af8a3c-3228-4592-a700-c9e5cc5ffc2b/public_url"
                             target="_blank"
                             class="group glass bg-gradient-to-br from-sky-900/40 to-indigo-900/40 p-8 rounded-2xl border border-sky-500/50 hover:border-sky-400 transition-all w-full flex items-center gap-8">
-                            <img src="..\cybersecurity\certification\comptia\comptia-security-ce-certification.png" alt="Security+"
+                            <img src="src/certification/comptia/comptia-security-ce-certification.png" alt="Security+"
                                 class="w-28 h-28 group-hover:rotate-12 transition-transform">
                             <div>
                                 <span class="text-sky-400 text-xs font-bold tracking-widest uppercase">Core
@@ -128,7 +131,7 @@
                         <a href="https://learn.microsoft.com/api/credentials/share/en-us/sinnature/4481221B01AA7BCB"
                             target="_blank"
                             class="group glass bg-slate-800/50 p-6 rounded-2xl hover:border-sky-500 transition-all duration-300 flex flex-col items-center">
-                            <img src="../cybersecurity\certification\microsoft\zero-state-applied-skills.svg" alt="MS AD"
+                            <img src="src/certification/microsoft/zero-state-applied-skills.svg" alt="MS AD"
                                 class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
                             <h3 class="font-bold text-sky-400 text-center">Microsoft</h3>
                             <p class="text-xs text-slate-100 mt-2 text-center">Administer AD Domain Services</p>
@@ -138,25 +141,64 @@
                         <a href="https://www.credly.com/badges/fd328694-95b3-4ad4-aa22-2c5d9bdc6c16/public_url"
                             target="_blank"
                             class="group glass bg-slate-800/50 p-6 rounded-2xl hover:border-sky-500 transition-all duration-300 flex flex-col items-center">
-                            <img src="../cybersecurity/certification/cisco/network-support-and-security.png" alt="Cisco"
+                            <img src="src/certification/cisco/network-support-and-security.png" alt="Cisco"
                                 class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
                             <h3 class="font-bold text-sky-400 text-center">Cisco</h3>
                             <p class="text-xs text-slate-100 mt-2 text-center">Network Support and Security</p>
-                            <p class="text-sm text-slate-400 mt-1">2026-01-30</p>                            
+                            <p class="text-sm text-slate-400 mt-1">2026-01-30</p>
                         </a>
 
                         <a href="https://www.credly.com/badges/09c7241d-c966-4a25-b272-f9d6fcbcb53e/public_url"
                             target="_blank"
                             class="group glass bg-slate-800/50 p-6 rounded-2xl hover:border-sky-500 transition-all duration-300 flex flex-col items-center">
-                            <img src="../cybersecurity\certification\redhat\red-hat-certified-system-administrator-rhcsa.png" alt="RHCSA"
-                                class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
+                            <img src="src/certification/redhat/red-hat-certified-system-administrator-rhcsa.png"
+                                alt="RHCSA" class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
                             <h3 class="font-bold text-sky-400 text-center">Redhat</h3>
                             <p class="text-xs text-slate-100 mt-2 text-center">System Administrator</p>
-                            <p class="text-sm text-slate-400 mt-1">2025-12-19</p> 
+                            <p class="text-sm text-slate-400 mt-1">2025-12-19</p>
                         </a>
                     </div>
                 </section>
+                <section class="glass rounded-3xl p-3">
+                    <h2 class="text-2xl font-bold mb-3">GitHub Projects</h2>
 
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+
+                        <a href="https://github.com/cyberpeacemaker" target="_blank"
+                            class="group flex flex-col items-center text-center p-1 rounded-2xl hover:bg-white/10 transition-all">
+                            <div
+                                class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
+                                <img src="src/github/cyberpeacemaker.png" alt="GitHub Icon"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <span class="font-bold text-slate-100">Inforesic</span>
+                            <p class="text-xs text-slate-400 mt-1">Cyber security and forensic.</p>
+                        </a>
+
+                        <a href="https://ydnaandy123.github.io/" target="_blank"
+                            class="group flex flex-col items-center text-center p-1 rounded-2xl hover:bg-white/10 transition-all">
+                            <div
+                                class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
+                                <img src="src/github/juitingchien.png" alt="GitHub Icon"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <span class="font-bold text-slate-100">Jui-Ting Chien</span>
+                            <p class="text-xs text-slate-400 mt-1">AI & CV</p>
+                        </a>
+
+                        <a href="https://github.com/SiNNature" target="_blank"
+                            class="group flex flex-col items-center text-center p-1 rounded-2xl hover:bg-white/10 transition-all">
+                            <div
+                                class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
+                                <img src="src/github/sinnature.png" alt="GitHub Icon"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <span class="font-bold text-slate-100"></span>SiNNature</span>
+                            <p class="text-xs text-slate-400 mt-1">Multimedia creation & tool.</p>
+                        </a>
+
+                    </div>
+                </section>
                 <section class="glass rounded-3xl p-8 space-y-8">
                     <div class="flex justify-between items-center">
                         <div>
@@ -202,29 +244,41 @@
                         </div>
                     </div>
                 </section>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-0 p-0 overflow-hidden rounded-3xl">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-0 p-0 overflow-hidden rounded-3xl">
 
-    <div class="col-span-2 relative aspect-video overflow-hidden">
-        <img src="../creativ-mv1.png" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="作品1">
-    </div>
+                    <div class="col-span-2 relative aspect-video overflow-hidden">
+                        <img src="../creativ-mv1.png"
+                            class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            alt="作品1">
+                    </div>
 
-    <div class="col-span-2 relative aspect-video overflow-hidden border-l border-slate-900/10">
-        <img src="../creative-mv2.png" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="作品2">
-    </div>
+                    <div class="col-span-2 relative aspect-video overflow-hidden border-l border-slate-900/10">
+                        <img src="../creative-mv2.png"
+                            class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            alt="作品2">
+                    </div>
 
-    <div class="col-span-2 relative aspect-video overflow-hidden border-t border-slate-900/10">
-        <img src="你的圖片3.jpg" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="作品3">
-    </div>
+                    <div class="col-span-2 relative aspect-video overflow-hidden border-t border-slate-900/10">
+                        <img src="你的圖片3.jpg"
+                            class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            alt="作品3">
+                    </div>
 
-    <div class="col-span-1 row-span-2 relative aspect-video overflow-hidden border-t border-l border-slate-900/10">
-        <img src="你的圖片4.jpg" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="作品4">
-    </div>
+                    <div
+                        class="col-span-1 row-span-2 relative aspect-video overflow-hidden border-t border-l border-slate-900/10">
+                        <img src="你的圖片4.jpg"
+                            class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            alt="作品4">
+                    </div>
 
-    <div class="col-span-1 row-span-2 relative aspect-video overflow-hidden border-t border-l border-slate-900/10">
-        <img src="../creative-script1.png" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="作品5">
-    </div>
+                    <div
+                        class="col-span-1 row-span-2 relative aspect-video overflow-hidden border-t border-l border-slate-900/10">
+                        <img src="../creative-script1.png"
+                            class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            alt="作品5">
+                    </div>
 
-</div>                
+                </div>
                 <section class="glass rounded-3xl p-8 space-y-2">
                     <div class="flex justify-between items-center">
                         <div>
@@ -390,29 +444,109 @@
                 </section>
             </div>
 
+            <!-- Right Column -->
             <div class="space-y-6">
+
+                <!-- Google Scholar -->
                 <section class="glass rounded-3xl p-6">
-                    <h2 class="text-xl font-bold mb-4">學歷背景</h2>
+                    <div class="flex justify-between items-center mb-1">
+                        <div>
+                            <h2 class="text-base font-bold text-white mb-2">Google Scholar</h2>
+                            <p class="text-[10px] text-slate-400 uppercase tracking-wider">Cited by</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+
+
+                            <a href="https://scholar.google.com/citations?user=-DiAhGEAAAAJ&hl=zh-TW" target="_blank"
+                                class="text-[10px] text-sky-400 hover:text-sky-300 transition-colors">
+                                <div
+                                    class="w-14 h-14 mb-1 border border-sky-400/30 rounded-full overflow-hidden bg-white/10 p-0.5">
+                                    <img src="src/scholar/scholar.jpg" alt="Profile"
+                                        class="w-full h-full object-cover rounded-full">
+                                </div>
+                                <!-- View Profile → -->
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 mt-3 mb-3 text-center">
+                        <div
+                            class="py-2 px-1 bg-white/5 rounded-2xl border border-white/10 flex flex-col justify-center">
+                            <p class="text-[10px] text-slate-400 tracking-tighter leading-none mb-1">Citations</p>
+                            <p class="text-xl font-bold text-white leading-none">593</p>
+                        </div>
+
+                        <div
+                            class="py-2 px-1 bg-white/5 rounded-2xl border border-white/10 flex flex-col justify-center">
+                            <p class="text-[10px] text-slate-400 tracking-tighter leading-none mb-1">h-index</p>
+                            <p class="text-xl font-bold text-white leading-none">7</p>
+                        </div>
+
+                        <div
+                            class="py-2 px-1 bg-white/5 rounded-2xl border border-white/10 flex flex-col justify-center">
+                            <p class="text-[10px] text-slate-400 tracking-tighter leading-none mb-1">i10-index</p>
+                            <p class="text-xl font-bold text-white leading-none">7</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-end justify-between h-24 gap-1 px-2">
+                        <!-- <div class="w-full bg-sky-500/40 rounded-t-sm hover:bg-sky-400 transition-all cursor-help" style="height: 10%" title="2017: 4"></div>
+        <div class="w-full bg-sky-500/40 rounded-t-sm hover:bg-sky-400 transition-all cursor-help" style="height: 30%" title="2018: 20"></div> --->
+                        <div class="w-full bg-sky-500/40 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 50%" title="2019: 46"></div>
+                        <div class="w-full bg-sky-500/40 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 85%" title="2020: 91"></div>
+                        <div class="w-full bg-sky-500/60 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 100%" title="2021: 105"></div>
+                        <div class="w-full bg-sky-500/60 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 100%" title="2022: 105"></div>
+                        <div class="w-full bg-sky-500/60 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 80%" title="2023: 89"></div>
+                        <div class="w-full bg-sky-500/60 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 65%" title="2024: 67"></div>
+                        <div class="w-full bg-sky-500/60 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 55%" title="2025: 58"></div>
+                        <div class="w-full bg-sky-500/60 rounded-t-sm hover:bg-sky-400 transition-all cursor-help"
+                            style="height: 5%" title="2026: 3"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-slate-500 mt-2 px-1">
+                        <span>2019</span>
+                        <span>2023</span>
+                        <span>2026</span>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="glass rounded-3xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Education</h2>
                     <div class="space-y-4">
-                        <div class="flex gap-4 items-start">
-                            <div class="w-12 h-12 shrink-0 bg-white rounded-lg p-1 flex items-center justify-center">
-                                <span class="text-black font-bold text-xs">NTHU</span>
+                        <div class="flex gap-4 items-center">
+                            <div
+                                class="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 overflow-hidden p-0.5">
+                                <img src="src/education/cis-1-1.jpg" alt="NTHU Logo"
+                                    class="w-full h-full object-contain rounded-full">
                             </div>
+
                             <div>
-                                <p class="font-bold">清華大學 資工碩士</p>
+                                <p class="font-bold text-slate-100">National Tsing Hua University</p>
+                                <p class="text-sm text-sky-400">M.S. in Computer Science</p>
                                 <p class="text-xs text-slate-400">2015 - 2017</p>
                             </div>
                         </div>
-                        <div class="flex gap-4 items-start">
-                            <div class="w-12 h-12 shrink-0 bg-white rounded-lg p-1 flex items-center justify-center">
-                                <span class="text-black font-bold text-xs">NTHU</span>
+                        <div class="flex gap-4 items-center">
+                            <div
+                                class="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 overflow-hidden p-0.5">
+                                <img src="src/education/cis-1-1.jpg" alt="NTHU Logo"
+                                    class="w-full h-full object-contain rounded-full">
                             </div>
+
                             <div>
-                                <p class="font-bold text-sky-400">清華大學 資工學士</p>
-                                <p class="text-xs text-slate-400">2011 - 2015 (逕錄碩士班)</p>
+                                <p class="font-bold text-slate-100">National Tsing Hua University</p>
+                                <p class="text-sm text-sky-400">B.S. in Computer Science</p>
+                                <p class="text-xs text-slate-400">2011 - 2015</p>
                             </div>
                         </div>
-                    </div>
                 </section>
 
                 <section class="glass rounded-3xl p-6">
