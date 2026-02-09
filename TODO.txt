@@ -1,11 +1,5 @@
 #
-- skill tree
-- line修改
-- cert (shadow)
 - 獎狀PDF掃描
 - 大頭照
 
 #
-- Educatoin
-    - badge ilnk
-    -  hover
