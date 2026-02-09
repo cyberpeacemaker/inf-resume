@@ -31,155 +31,179 @@
 <body class="p-4 md:p-8">
 
     <div class="max-w-6xl mx-auto space-y-6">
-
-        <header class="glass rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-6">
-                <div class="w-24 h-24 rounded-full bg-slate-700 overflow-hidden border-2 border-sky-400">
+<header class="glass rounded-3xl px-4 py-8 md:px-8 border border-white/5">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-5 shrink-0">
+            <div class="relative group">
+                <div class="absolute inset-0 bg-sky-500/15 blur-lg rounded-full"></div>
+                <div class="w-24 h-24 rounded-full bg-slate-800 overflow-hidden border-2 border-sky-400/50 relative z-10 shadow-xl">
                     <img src="你的大頭照網址" alt="Jui-Ting Chien" class="w-full h-full object-cover">
                 </div>
-                <div>
-                    <h1 class="text-4xl font-bold tracking-tight">簡瑞霆 <span
-                            class="text-xl font-normal text-slate-400">Jui-Ting Chien</span></h1>
-                    <p class="text-sky-400 mt-2 font-medium"><i class="fas fa-shield-halved mr-2"></i>以協助企業應對資安威脅為使命
-                    </p>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold text-white leading-tight">
+                    簡瑞霆 <span class="text-sm font-light text-slate-400 ml-1">Jui-Ting Chien</span>
+                </h1>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2 mt-1">
+                    <a href="mailto:a47u0905@gmail.com" class="text-slate-500 text-[11px] hover:text-sky-300 transition-colors italic">
+                        a47u0905@gmail.com
+                    </a>
                 </div>
-                email: a47u0905@gmail.com
             </div>
-            <div class="flex gap-4">
-                <a href="https://github.com/cyberpeacemaker"
-                    class="glass p-3 rounded-xl hover:bg-slate-700 transition"><i
-                        class="fab fa-github text-2xl"></i></a>
-                <a href="https://scholar.google.com/citations?user=-DiAhGEAAAAJ"
-                    class="glass p-3 rounded-xl hover:bg-slate-700 transition"><i
-                        class="fas fa-graduation-cap text-2xl"></i></a>
-                <a href="https://sinnature.github.io/" class="glass p-3 rounded-xl hover:bg-slate-700 transition"><i
-                        class="fas fa-globe text-2xl"></i></a>
-            </div>
-                    <h2 class="text-2xl font-bold mb-3">GitHub Projects</h2>
+        </div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 border-t lg:border-t-0 lg:border-l border-white/10 pt-4 lg:pt-0 lg:pl-8">
+    
+    <a href="https://github.com/cyberpeacemaker" target="_blank" class="group flex flex-col items-center gap-2 transition-all">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
+            <img src="src/github/cyberpeacemaker.png" alt="GitHub Icon" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <span class="text-[10px] font-bold text-slate-300 group-hover:text-sky-400 transition-colors">Inforensic</span>
+            <p class="text-[9px] text-slate-500 leading-tight">Cyber Security & Forensic</p>
+        </div>
+    </a>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+    <a href="https://ydnaandy123.github.io/" target="_blank" class="group flex flex-col items-center gap-2 transition-all">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
+            <img src="src/github/juitingchien.png" alt="GitHub Icon" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <span class="text-[10px] font-bold text-slate-300 group-hover:text-sky-400 transition-colors">Vision AI</span>
+            <p class="text-[9px] text-slate-500 leading-tight">Computer Vision & AI</p>
+        </div>
+    </a>
 
-                        <a href="https://github.com/cyberpeacemaker" target="_blank"
-                            class="group flex flex-col items-center text-center p-1 rounded-2xl hover:bg-white/10 transition-all">
-                            <div
-                                class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
-                                <img src="src/github/cyberpeacemaker.png" alt="GitHub Icon"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <!-- <span class="font-bold text-slate-100">Inforensic</span> -->
-                            <p class="text-xs text-slate-400 mt-1">Cyber security and forensic</p>
-                        </a>
+    <a href="https://github.com/SiNNature" target="_blank" class="group flex flex-col items-center gap-2 transition-all">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
+            <img src="src/github/sinnature.png" alt="GitHub Icon" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <span class="text-[10px] font-bold text-slate-300 group-hover:text-sky-400 transition-colors">SiNNature</span>
+            <p class="text-[9px] text-slate-500 leading-tight">Multimedia & Tools</p>
+        </div>
+    </a>
 
-                        <a href="https://ydnaandy123.github.io/" target="_blank"
-                            class="group flex flex-col items-center text-center p-1 rounded-2xl hover:bg-white/10 transition-all">
-                            <div
-                                class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
-                                <img src="src/github/juitingchien.png" alt="GitHub Icon"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <!-- <span class="font-bold text-slate-100">Jui-Ting Chien</span> -->
-                            <p class="text-xs text-slate-400 mt-1">Computer vision and AI</p>
-                        </a>
-
-                        <a href="https://github.com/SiNNature" target="_blank"
-                            class="group flex flex-col items-center text-center p-1 rounded-2xl hover:bg-white/10 transition-all">
-                            <div
-                                class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
-                                <img src="src/github/sinnature.png" alt="GitHub Icon"
-                                    class="w-full h-full object-contain">
-                            </div>
-                            <!-- <span class="font-bold text-slate-100"></span>SiNNature</span> -->
-                            <p class="text-xs text-slate-400 mt-1">Multimedia creation and tool</p>
-                        </a>
-
-                    </div>            
-        </header>
+</div>
+    </div>
+</header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Main Column -->
             <div class="md:col-span-2 space-y-4">
 
                 <!-- Cybersecurity Skill Tree -->
-                <section class="glass rounded-3xl p-8 space-y-4">
-                    <div class="flex justify-between items-end">
-                        <div>
-                            <h2 class="text-2xl font-bold text-sky-400">Skill Tree</h2>
-                        </div>
+<section class="glass rounded-3xl p-1 border border-white/5  space-y-2">
+    <div class="m-4">
+        <h2 class="text-xl font-bold text-white tracking-widest uppercase">Cybersecurity <span class="text-sky-400">Roadmap</span></h2>
+        
+    </div>
 
-                    </div>
+    <div class="bg-slate-800/20 py-1 rounded-2xl bg-slate-950/40 border border-slate-700/30">
+        <div class="flex flex-col items-center text-center mb-10">
+            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em] mb-2">Level 03</span>
+            <h3 class="text-sm font-bold text-slate-300 tracking-wide uppercase flex items-center gap-2">
+                <span class="h-[1px] w-4 bg-slate-600"></span>
+                Advanced Specialization
+                <span class="h-[1px] w-4 bg-slate-600"></span>
+            </h3>
+        </div>
 
-                    <!-- Layer 3 -->
-                    紅 藍
-                    <div class="bg-slate-900/50 rounded-2xl p-4 border border-dashed border-slate-700">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="flex flex-col items-center text-center group">
+                <div class="relative mb-4">
+                    <div class="absolute inset-0 bg-blue-500/5 blur-xl rounded-full"></div>
+                    <img src="src/certification/eccouncil/cnd.webp" alt="CND" 
+                         class="w-20 h-20 relative z-10 opacity-30 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
+                </div>
+                <span class="bg-blue-500/10 text-blue-400 text-[10px] px-2 py-0.5 rounded border border-blue-500/20 font-bold uppercase tracking-wider mb-3">
+                    Defense / Blue Team
+                </span>
+                <h4 class="text-lg font-bold text-slate-100 group-hover:text-blue-400 transition-colors">EC-Council CND</h4>
+                <span class="text-[10px] font-mono text-slate-500 mt-3 italic">Scheduled 2026</span>
+            </div>
 
-                        <div class="flex gap-4 opacity-60">
-                            <div
-                                class="px-4 py-2 bg-slate-800 rounded-lg text-sm border border-slate-700 text-slate-400">
-                                <img src="src/certification/eccouncil/cnd.webp" alt="CND"
-                                    class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
-                                EC-Council CND (Network Defense)
-                            </div>
-                            <div
-                                class="px-4 py-2 bg-slate-800 rounded-lg text-sm border border-slate-700 text-slate-400">
-                                <img src="src/certification/eccouncil/ceh.webp" alt="CEH"
-                                    class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
-                                EC-Council CEH (Ethical Hacking)
-                            </div>
-                        </div>
-                    </div>
+            <div class="flex flex-col items-center text-center group">
+                <div class="relative mb-4">
+                    <div class="absolute inset-0 bg-rose-500/5 blur-xl rounded-full"></div>
+                    <img src="src/certification/eccouncil/ceh.webp" alt="CEH" 
+                         class="w-20 h-20 relative z-10 opacity-30 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
+                </div>
+                <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2 py-0.5 rounded border border-rose-500/20 font-bold uppercase tracking-wider mb-3">
+                    Offense / Red Team
+                </span>
+                <h4 class="text-lg font-bold text-slate-100 group-hover:text-rose-400 transition-colors">EC-Council CEH</h4>
+                <span class="text-[10px] font-mono text-slate-500 mt-3 italic">Scheduled 2026</span>
+            </div>
+        </div>
+    </div>
 
-                    <!-- Layer 2 -->
-                     美國國防部要求 資安通識概念
-                    <div class="flex justify-center">
-                        <a href="https://www.credly.com/badges/c4af8a3c-3228-4592-a700-c9e5cc5ffc2b/public_url"
-                            target="_blank"
-                            class="group glass bg-gradient-to-br from-sky-900/40 to-indigo-900/40 p-8 rounded-2xl border border-sky-500/50 hover:border-sky-400 transition-all w-full flex items-center gap-8">
-                            <img src="src/certification/comptia/comptia-security-ce-certification.png" alt="Security+"
-                                class="w-28 h-28 group-hover:rotate-12 transition-transform">
-                            <div>
-                                <span class="text-sky-400 text-xs font-bold tracking-widest uppercase">Core
-                                    Certification</span>
-                                <h3 class="text-xl font-bold text-white">CompTIA Security+ ce</h3>
-                                <p class="text-sm text-slate-300 mt-2">驗證資安運維與威脅應對的國際標準認證</p>
-                                <p class="text-sm text-slate-400 mt-2">2026-01-24</p>
-                            </div>
-                        </a>
-                    </div>
+    <div class="bg-slate-800/20 py-2 rounded-2xl bg-slate-950/40 border border-slate-700/30">
+        <div class="flex flex-col items-center text-center mb-3">
+            <span class="text-[10px] font-bold text-sky-500 uppercase tracking-[0.3em] mb-2">Level 02</span>
+            <h3 class="text-sm font-bold text-slate-300 tracking-wide uppercase flex items-center gap-2">
+                <span class="h-[1px] w-4 bg-sky-900"></span>
+                DoD 8570 Standard
+                <span class="h-[1px] w-4 bg-sky-900"></span>
+            </h3>
+        </div>
+        
+        <div class="flex justify-center">
+            <a href="https://www.credly.com/badges/c4af8a3c-3228-4592-a700-c9e5cc5ffc2b/public_url" 
+               target="_blank"
+               class="group flex flex-col md:flex-row items-center gap-8 bg-slate-900/40 hover:border-sky-500/50 transition-all">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-sky-500/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <img src="src/certification/comptia/comptia-security-ce-certification.png" alt="Security+" 
+                         class="w-24 h-24 relative z-10 group-hover:scale-110 transition-transform">
+                </div>
+                <div class="text-center md:text-left">
+                    <span class="text-sky-500 text-[10px] font-bold uppercase tracking-widest mb-1 block">CompTIA</span>
+                    <h4 class="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors">Security+ ce</h4>
+                    <span class="text-xs font-mono text-slate-500 mt-2 block tracking-tight">2026-01-24</span>
+                </div>
+            </a>
+        </div>
+    </div>
 
-                    <!-- Layer 1 -->
-                     品牌認證 部屬、管理與疑難排解
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/sinnature/4481221B01AA7BCB"
-                            target="_blank"
-                            class="group glass bg-slate-800/50 p-6 rounded-2xl hover:border-sky-500 transition-all duration-300 flex flex-col items-center">
-                            <img src="src/certification/microsoft/zero-state-applied-skills.svg" alt="MS AD"
-                                class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
-                            <h3 class="font-bold text-sky-400 text-center">Microsoft</h3>
-                            <p class="text-xs text-slate-100 mt-2 text-center">Administer AD Domain Services</p>
-                            <p class="text-sm text-slate-400 mt-1">2025-11-26</p>
-                        </a>
+    <div class="bg-slate-800/20 py-2 rounded-2xl bg-slate-950/40 border border-slate-700/30">
+        <div class="flex flex-col items-center text-center mb-10">
+            <span class="text-[10px] font-bold text-sky-500 uppercase tracking-[0.3em] mb-2">Level 01</span>
+            <h3 class="text-sm font-bold text-slate-300 tracking-wide uppercase flex items-center gap-2">
+                <span class="h-[1px] w-4 bg-slate-600"></span>
+                Infrastructure Operations
+                <span class="h-[1px] w-4 bg-slate-600"></span>
+            </h3>
+        </div>
 
-                        <a href="https://www.credly.com/badges/fd328694-95b3-4ad4-aa22-2c5d9bdc6c16/public_url"
-                            target="_blank"
-                            class="group glass bg-slate-800/50 p-6 rounded-2xl hover:border-sky-500 transition-all duration-300 flex flex-col items-center">
-                            <img src="src/certification/cisco/network-support-and-security.png" alt="Cisco"
-                                class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
-                            <h3 class="font-bold text-sky-400 text-center">Cisco</h3>
-                            <p class="text-xs text-slate-100 mt-2 text-center">Network Support and Security</p>
-                            <p class="text-sm text-slate-400 mt-1">2026-01-30</p>
-                        </a>
-
-                        <a href="https://www.credly.com/badges/09c7241d-c966-4a25-b272-f9d6fcbcb53e/public_url"
-                            target="_blank"
-                            class="group glass bg-slate-800/50 p-6 rounded-2xl hover:border-sky-500 transition-all duration-300 flex flex-col items-center">
-                            <img src="src/certification/redhat/red-hat-certified-system-administrator-rhcsa.png"
-                                alt="RHCSA" class="w-24 h-24 mb-4 group-hover:scale-110 transition-transform">
-                            <h3 class="font-bold text-sky-400 text-center">Redhat</h3>
-                            <p class="text-xs text-slate-100 mt-2 text-center">System Administrator</p>
-                            <p class="text-sm text-slate-400 mt-1">2025-12-19</p>
-                        </a>
-                    </div>
-                </section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center text-center group">
+                <img src="src/certification/microsoft/zero-state-applied-skills.svg" class="w-20 h-20 mb-4 group-hover:scale-110 transition-transform">
+                <span class="bg-sky-500/10 text-sky-400 text-[10px] px-2 py-0.5 rounded border border-sky-500/20 font-bold uppercase tracking-wider mb-2">
+                    Microsoft
+                </span>
+                <h4 class="text-sm font-bold text-slate-200">Administer AD Domain Services</h4>
+                <span class="text-[10px] font-mono text-slate-500 mt-2">2025-11-26</span>
+            </div>
+            <div class="flex flex-col items-center text-center group">
+                <img src="src/certification/cisco/network-support-and-security.png" class="w-20 h-20 mb-4 group-hover:scale-110 transition-transform">
+                <span class="bg-indigo-500/10 text-indigo-400 text-[10px] px-2 py-0.5 rounded border border-indigo-500/20 font-bold uppercase tracking-wider mb-2">
+                    Cisco
+                </span>
+                <h4 class="text-sm font-bold text-slate-200">Network Support and Security</h4>
+                <span class="text-[10px] font-mono text-slate-500 mt-2">2026-01-30</span>
+            </div>
+            <div class="flex flex-col items-center text-center group">
+                <img src="src/certification/redhat/red-hat-certified-system-administrator-rhcsa.png" class="w-20 h-20 mb-4 group-hover:scale-110 transition-transform">
+                <span class="bg-rose-500/10 text-rose-400 text-[10px] px-2 py-0.5 rounded border border-rose-500/20 font-bold uppercase tracking-wider mb-2">
+                    Red Hat
+                </span>
+                <h4 class="text-sm font-bold text-slate-200">System Administrator</h4>
+                <span class="text-[10px] font-mono text-slate-500 mt-2">2025-12-19</span>
+            </div>
+        </div>
+    </div>
+</section>
 
                 <!-- Publications -->
                 <section class="glass rounded-3xl px-4 py-2 space-y-4">
@@ -435,7 +459,7 @@
                 <!-- National Service -->
                 <section class="glass rounded-3xl px-6 py-4 w-full">
                     <div class="mb-4">
-                        <h2 class="text-2xl font-bold">教育替代役：服務足跡</h2>                        
+                        <h2 class="text-2xl font-bold">教育替代役</h2>                        
                     </div>
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-1">
