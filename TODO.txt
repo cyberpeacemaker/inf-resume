@@ -1,31 +1,6 @@
 #
-- 獎狀PDF掃描
-- 大頭照
+- header
+    - github
+- cybersecurity blueprint?
 - cert add eccouncil
-
-# 
-edge any all out
-outlook?
-- 註冊
-
-#
-1.
-2.A
-3.A
-4.A
-5.B
-6.A
-7.D
-8.D
-9.C
-10.B
-11.B
-12.B
-13.C
-14.B
-15.C
-16.C
-17.B
-18.B
-19.B
-20.D
+- url 404?
