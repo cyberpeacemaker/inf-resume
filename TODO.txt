@@ -1,6 +1,2 @@
 #
-- header
-    - github
-- cybersecurity blueprint?
-- cert add eccouncil
-- url 404?
+- cert add eccouncil ?

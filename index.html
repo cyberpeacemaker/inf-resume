@@ -31,79 +31,77 @@
 <body class="p-4 md:p-8">
 
     <div class="max-w-6xl mx-auto space-y-6">
-        <header class="glass rounded-3xl px-4 py-8 md:px-8 border border-white/5">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <!-- Header -->
+        <header class="glass rounded-3xl px-6 py-10 md:px-10 border border-white/10 shadow-2xl">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
 
-                <div class="flex items-center gap-5 shrink-0">
+                <div class="flex flex-col md:flex-row items-center gap-6 shrink-0">
                     <div class="relative group">
-                        <div class="absolute inset-0 bg-sky-500/15 blur-lg rounded-full"></div>
-                        <div
-                            class="w-24 h-24 rounded-full bg-slate-800 overflow-hidden border-2 border-sky-400/50 relative z-10 shadow-xl">
+                        <div class="absolute inset-0 bg-sky-500/20 blur-2xl rounded-full group-hover:bg-sky-500/30 transition-all"></div>
+                        
+                        <div class="w-32 h-32 rounded-full bg-slate-800 overflow-hidden border-2 border-sky-400/40 relative z-10 shadow-2xl transition-transform duration-500 group-hover:scale-105">
                             <img src="src/head.jpeg" alt="Jui-Ting Chien" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-white leading-tight">
-                            簡瑞霆 <span class="text-sm font-light text-slate-400 ml-1">Jui-Ting Chien</span>
+
+                    <div class="text-center md:text-left">
+                        <h1 class="text-2xl font-bold text-white tracking-tight">
+                            簡瑞霆 <span class="text-base font-light text-slate-400 ml-2">Jui-Ting Chien</span>
                         </h1>
                         <div class="mt-2">
-                            <p class="text-sky-400 text-sm font-medium tracking-wide">
-                                以協助企業應對資安威脅為使命
+                            <p class="text-sky-400 text-sm font-semibold tracking-widest uppercase">
+                                致力於協助企業應對資安威脅
                             </p>
                         </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 mt-1">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-3 mt-3">
                             <a href="mailto:a47u0905@gmail.com"
-                                class="text-slate-300 text-[13px] hover:text-sky-300 transition-colors italic">
-                                a47u0905@gmail.com
+                                class="flex items-center justify-center md:justify-start gap-2 text-slate-400 text-sm hover:text-sky-300 transition-colors group">
+                                <i class="far fa-envelope group-hover:animate-bounce"></i>
+                                <span class="italic font-mono">a47u0905@gmail.com</span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- Github project -->
-                <div
-                    class="grid grid-cols-1 sm:grid-cols-3 gap-1 lg:gap-8 border-t lg:border-t-0 lg:border-l border-white/10 pt-4 lg:pt-0 lg:pl-8">
 
-                    <a href="https://github.com/cyberpeacemaker" target="_blank"
-                        class="group flex flex-col items-center gap-2 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
-                            <img src="src/github/cyberpeacemaker.png" alt="GitHub Icon"
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="flex flex-col items-center text-center">
-                            <span
-                                class="text-[10px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors">Cyber
-                                Security & Forensic</span>
-                        </div>
-                    </a>
+    <div class="relative border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-10">
+        <div class="absolute top-0 left-0 lg:left-10 pt-1 lg:pt-0 mb-4">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-slate-200 font-bold">
+                GitHub Projects
+            </span>
+        </div>
 
-                    <a href="https://ydnaandy123.github.io/" target="_blank"
-                        class="group flex flex-col items-center gap-2 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
-                            <img src="src/github/juitingchien.png" alt="GitHub Icon"
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="flex flex-col items-center text-center">
-                            <span
-                                class="text-[10px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors">Machine learning & AI</span>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/SiNNature" target="_blank"
-                        class="group flex flex-col items-center gap-2 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
-                            <img src="src/github/sinnature.png" alt="GitHub Icon" class="w-full h-full object-contain">
-                        </div>
-                        <div class="flex flex-col items-center text-center">
-                            <span
-                                class="text-[10px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors">Multimedia
-                                & Tools</span>
-                        </div>
-                    </a>
-
+        <div class="grid grid-cols-3 gap-3 md:gap-4 mt-9">
+            <a href="https://github.com/cyberpeacemaker" target="_blank"
+                class="group flex flex-col items-center gap-2 max-w-[100px]">
+                <div class="w-14 h-14 bg-white/95 rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:-translate-y-1 transition-all duration-300 group-hover:shadow-sky-500/20">
+                    <img src="src/github/cyberpeacemaker.png" alt="GitHub Icon" class="w-full h-full object-cover">
                 </div>
+                <span class="text-[9px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors text-center leading-tight">
+                    Cyber Security <br> & Forensic
+                </span>
+            </a>
+
+            <a href="https://ydnaandy123.github.io/" target="_blank"
+                class="group flex flex-col items-center gap-2 max-w-[100px]">
+                <div class="w-14 h-14 bg-white/95 rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:-translate-y-1 transition-all duration-300 group-hover:shadow-sky-500/20">
+                    <img src="src/github/juitingchien.png" alt="GitHub Icon" class="w-full h-full object-cover">
+                </div>
+                <span class="text-[9px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors text-center leading-tight">
+                    Machine Learning <br> & AI
+                </span>
+            </a>
+
+            <a href="https://github.com/SiNNature" target="_blank"
+                class="group flex flex-col items-center gap-2 max-w-[100px]">
+                <div class="w-14 h-14 bg-white/95 rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:-translate-y-1 transition-all duration-300 group-hover:shadow-sky-500/20">
+                    <img src="src/github/sinnature.png" alt="GitHub Icon" class="w-full h-full object-cover">
+                </div>
+                <span class="text-[9px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors text-center leading-tight">
+                    Multimedia<br>& Tools
+                </span>
+            </a>
+        </div>
+    </div>
             </div>
         </header>
 
@@ -417,70 +415,59 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
 
-                        <div
-                            class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
+                        <div class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
                             <div class="relative w-full aspect-video overflow-hidden flex items-center justify-center">
-                                <!-- <video
-                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                                    src="你的影片1.mp4" loop muted playsinline preload="none">
-                                </video> -->
+                                <video
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10"
+                                    src="src/creator/mv-1-preview.mp4" 
+                                    loop muted playsinline preload="metadata">
+                                </video>
+
                                 <img src="src/creator/mv-1.png" alt="mv1"
-                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300">
-                                <!-- <div
-                                    class="absolute inset-0 flex items-center justify-center bg-black/40 text-white opacity-100 group-hover:opacity-0 transition-opacity">
-                                    <i class="fas fa-play-circle text-6xl opacity-80"></i>
-                                </div> -->
+                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 z-0">
+                                    
                             </div>
                         </div>
 
-                        <div
-                            class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
-                            <div
-                                class="relative w-full aspect-video bg-slate-700 overflow-hidden flex items-center justify-center">
-                                <!-- <video
-                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                                    src="你的影片2.mp4" loop muted playsinline preload="none">
-                                </video> -->
-                                <img src="src/creator/mv-3.png" alt="mv2"
-                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300">
-                                <!-- <div
-                                    class="absolute inset-0 flex items-center justify-center bg-black/40 text-white opacity-100 group-hover:opacity-0 transition-opacity">
-                                    <i class="fas fa-play-circle text-6xl opacity-80"></i>
-                                </div> -->
+                        <div class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
+                            <div class="relative w-full aspect-video overflow-hidden flex items-center justify-center">
+                                <video
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10"
+                                    src="src/creator/mv-3-preview.mp4" 
+                                    loop muted playsinline preload="metadata">
+                                </video>
+
+                                <img src="src/creator/mv-3.png" alt="mv1"
+                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 z-0">
+                                    
                             </div>
                         </div>
 
-                        <div
-                            class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
-                            <div
-                                class="relative w-full aspect-video bg-slate-700 overflow-hidden flex items-center justify-center">
-                                <!-- <video
-                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                                    src="你的影片3.mp4" loop muted playsinline preload="none">
-                                </video> -->
-                                <img src="src/creator/script-1.png" alt="作品3"
-                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300">
-                                <!-- <div
-                                    class="absolute inset-0 flex items-center justify-center bg-black/40 text-white opacity-100 group-hover:opacity-0 transition-opacity">
-                                    <i class="fas fa-play-circle text-6xl opacity-80"></i>
-                                </div> -->
+                        <div class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
+                            <div class="relative w-full aspect-video overflow-hidden flex items-center justify-center">
+                                <video
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10"
+                                    src="src/creator/script-1-preview.mp4" 
+                                    loop muted playsinline preload="metadata">
+                                </video>
+
+                                <img src="src/creator/script-1.png" alt="mv1"
+                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 z-0">
+                                    
                             </div>
                         </div>
 
-                        <div
-                            class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
-                            <div
-                                class="relative w-full aspect-video bg-slate-700 overflow-hidden flex items-center justify-center">
-                                <!-- <video
-                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                                    src="你的影片3.mp4" loop muted playsinline preload="none">
-                                </video> -->
-                                <img src="src/creator/script-2.png" alt="作品4"
-                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300">
-                                <!-- <div
-                                    class="absolute inset-0 flex items-center justify-center bg-black/40 text-white opacity-100 group-hover:opacity-0 transition-opacity">
-                                    <i class="fas fa-play-circle text-6xl opacity-80"></i>
-                                </div> -->
+                        <div class="glass bg-slate-800/50 overflow-hidden group relative hover:border-amber-500 transition-all rounded-xl border border-white/10">
+                            <div class="relative w-full aspect-video overflow-hidden flex items-center justify-center">
+                                <video
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10"
+                                    src="src/creator/script-2-preview.mp4" 
+                                    loop muted playsinline preload="metadata">
+                                </video>
+
+                                <img src="src/creator/script-2.png" alt="mv1"
+                                    class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 z-0">
+                                    
                             </div>
                         </div>
 
@@ -512,7 +499,7 @@
                         <div
                             class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all">
                             <div class="aspect-[2/3] w-full bg-slate-700">
-                                <img src="src/military/award-1" alt="校園服務"
+                                <img src="src/military/award-1.JPG" alt="校園服務"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
@@ -567,32 +554,32 @@
                 <section class="glass rounded-3xl p-4">
                     <h2 class="text-xl font-bold mb-4">Education</h2>
                     <div class="space-y-4">
-                        <div class="flex gap-4 items-center">
-                            <div
-                                class="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 overflow-hidden p-0.5">
-                                <img src="src/education/cis-1-1.jpg" alt="NTHU Logo"
-                                    class="w-full h-full object-contain rounded-full">
+                        
+                        <a href="https://www.nthu.edu.tw" target="_blank" rel="noopener noreferrer" 
+                        class="flex gap-4 items-center hover:bg-white/5 transition-colors rounded-xl p-1">
+                            <div class="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 overflow-hidden p-0.5">
+                                <img src="src/education/cis-1-1.jpg" alt="NTHU Logo" class="w-full h-full object-contain rounded-full">
                             </div>
-
                             <div>
                                 <p class="font-bold text-slate-100">National Tsing Hua University</p>
                                 <p class="text-sm text-sky-400">M.S. in Computer Science</p>
                                 <p class="text-xs text-slate-400">2015 - 2017</p>
                             </div>
-                        </div>
-                        <div class="flex gap-4 items-center">
-                            <div
-                                class="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 overflow-hidden p-0.5">
-                                <img src="src/education/cis-1-1.jpg" alt="NTHU Logo"
-                                    class="w-full h-full object-contain rounded-full">
-                            </div>
+                        </a>
 
+                        <a href="https://www.nthu.edu.tw" target="_blank" rel="noopener noreferrer" 
+                        class="flex gap-4 items-center hover:bg-white/5 transition-colors rounded-xl p-1">
+                            <div class="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 overflow-hidden p-0.5">
+                                <img src="src/education/cis-1-1.jpg" alt="NTHU Logo" class="w-full h-full object-contain rounded-full">
+                            </div>
                             <div>
                                 <p class="font-bold text-slate-100">National Tsing Hua University</p>
                                 <p class="text-sm text-sky-400">B.S. in Computer Science</p>
                                 <p class="text-xs text-slate-400">2011 - 2015</p>
                             </div>
-                        </div>
+                        </a>
+
+                    </div>
                 </section>
                 <!-- Certifications -->
                 <section class="glass rounded-3xl pb-4">
@@ -640,16 +627,15 @@
                         </div>
 
                         <div class="flex flex-col items-center">
-
-
                             <a href="https://scholar.google.com/citations?user=-DiAhGEAAAAJ&hl=zh-TW" target="_blank"
-                                class="text-[10px] text-sky-400 hover:text-sky-300 transition-colors">
-                                <div
-                                    class="w-14 h-14 mb-1 border border-sky-400/30 rounded-full overflow-hidden bg-white/10 p-0.5">
+                            class="group relative block transition-all duration-300">
+                                
+                                <div class="w-14 h-14 mb-1 border border-sky-400/30 rounded-full overflow-hidden bg-white/10 p-0.5 
+                                            group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.4)] transition-all duration-300">
+                                    
                                     <img src="src/scholar/scholar.jpg" alt="Profile"
-                                        class="w-full h-full object-cover rounded-full">
+                                        class="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-110 group-hover:brightness-110">
                                 </div>
-                                <!-- View Profile → -->
                             </a>
                         </div>
                     </div>
@@ -703,8 +689,7 @@
                 <!-- Channel -->
                 <section class="glass rounded-3xl p-4">
                     <h2 class="text-xl font-bold mb-6 flex items-center gap-3">
-                        <i class="fas fa-share-nodes text-sky-400"></i>
-                        頻道經營
+                        Creator Profile
                     </h2>
                     <div class="flex justify-around items-center mb-3">
                         <a href="https://space.bilibili.com/432848464" target="_blank"
@@ -723,7 +708,7 @@
                             </div>
                         </a>
 
-                        <a href="tiktok.com/@sinnature" target="_blank"
+                        <a href="https://www.tiktok.com/@sinnature" target="_blank"
                             class="group flex flex-col items-center gap-2 hover:scale-110 transition-transform">
                             <div
                                 class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-700/50 text-white group-hover:bg-black transition-colors">
