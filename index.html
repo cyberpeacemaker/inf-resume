@@ -32,76 +32,89 @@
 
     <div class="max-w-6xl mx-auto space-y-6">
         <!-- Header -->
-        <header class="glass rounded-3xl px-6 py-10 md:px-10 border border-white/10 shadow-2xl">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+        <header class="glass rounded-3xl px-6 py-10 md:px-10 border border-white/10 shadow-2xl overflow-hidden relative">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-sky-500/10 blur-[100px] rounded-full"></div>
 
-                <div class="flex flex-col md:flex-row items-center gap-6 shrink-0">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10 relative z-10">
+
+                <div class="flex flex-col md:flex-row items-center gap-8 shrink-0">
                     <div class="relative group">
-                        <div class="absolute inset-0 bg-sky-500/20 blur-2xl rounded-full group-hover:bg-sky-500/30 transition-all"></div>
+                        <div class="absolute inset-0 bg-sky-400/20 blur-2xl rounded-full animate-pulse group-hover:bg-sky-400/40 transition-all"></div>
                         
-                        <div class="w-32 h-32 rounded-full bg-slate-800 overflow-hidden border-2 border-sky-400/40 relative z-10 shadow-2xl transition-transform duration-500 group-hover:scale-105">
-                            <img src="src/head.jpeg" alt="Jui-Ting Chien" class="w-full h-full object-cover">
+                        <div class="w-36 h-36 rounded-full bg-slate-800 overflow-hidden border-4 border-white/5 relative z-10 shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:border-sky-400/50">
+                            <img src="src/head.jpeg" alt="Jui-Ting Chien" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all">
                         </div>
                     </div>
 
                     <div class="text-center md:text-left">
-                        <h1 class="text-2xl font-bold text-white tracking-tight">
-                            簡瑞霆 <span class="text-base font-light text-slate-400 ml-2">Jui-Ting Chien</span>
-                        </h1>
-                        <div class="mt-2">
-                            <p class="text-sky-400 text-sm font-semibold tracking-widest uppercase">
-                                致力於協助企業應對資安威脅
-                            </p>
+                        <div class="flex flex-col md:flex-row md:items-baseline gap-2">
+                            <h1 class="text-4xl font-extrabold text-white tracking-tight">簡瑞霆</h1>
+                            <span class="text-xl font-light text-slate-400 tracking-wide">Jui-Ting Chien</span>
                         </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center gap-3 mt-3">
-                            <a href="mailto:a47u0905@gmail.com"
-                                class="flex items-center justify-center md:justify-start gap-2 text-slate-400 text-sm hover:text-sky-300 transition-colors group">
-                                <i class="far fa-envelope group-hover:animate-bounce"></i>
-                                <span class="italic font-mono">a47u0905@gmail.com</span>
+                        
+                        <div class="mt-3 flex flex-wrap justify-center md:justify-start gap-2">
+                            <span class="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-[10px] font-bold uppercase tracking-wider">Cybersecurity</span>
+                            <span class="px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[10px] font-bold uppercase tracking-wider">AI Researcher</span>
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">Content Creator</span>
+                        </div>
+
+                        <p class="mt-4 text-slate-300 text-sm font-medium max-w-xs leading-relaxed">
+                            致力於以 AI 與自動化技術協助企業應對資安威脅。
+                        </p>
+                        
+                        <div class="flex flex-wrap justify-center md:justify-start gap-5 mt-5">
+                            <a href="mailto:a47u0905@gmail.com" class="flex items-center gap-2 text-slate-400 text-xs hover:text-white transition-all group">
+                                <i class="far fa-envelope text-sky-400 group-hover:scale-110"></i>
+                                <span class="font-mono">a47u0905@gmail.com</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 text-slate-400 text-xs hover:text-white transition-all group">
+                                <i class="fab fa-linkedin text-sky-400"></i>
+                                <span class="font-mono">LinkedIn</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-    <div class="relative border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-10">
-        <div class="absolute top-0 left-0 lg:left-10 pt-1 lg:pt-0 mb-4">
-            <span class="text-[10px] uppercase tracking-[0.2em] text-slate-200 font-bold">
-                GitHub Projects
-            </span>
-        </div>
+                <div class="w-full lg:w-auto">
+                    <div class="bg-black/20 rounded-2xl p-6 border border-white/5 backdrop-blur-sm">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-sky-400 font-black">Open Source Hub</span>
+                            <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        </div>
 
-        <div class="grid grid-cols-3 gap-3 md:gap-4 mt-9">
-            <a href="https://github.com/cyberpeacemaker" target="_blank"
-                class="group flex flex-col items-center gap-2 max-w-[100px]">
-                <div class="w-14 h-14 bg-white/95 rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:-translate-y-1 transition-all duration-300 group-hover:shadow-sky-500/20">
-                    <img src="src/github/cyberpeacemaker.png" alt="GitHub Icon" class="w-full h-full object-cover">
-                </div>
-                <span class="text-[9px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors text-center leading-tight">
-                    Cyber Security <br> & Forensic
-                </span>
-            </a>
+                        <div class="grid grid-cols-3 gap-6 md:gap-8">
+                            <a href="https://github.com/cyberpeacemaker" target="_blank" class="group flex flex-col items-center gap-3">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-sky-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    <div class="w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-sky-400/50 group-hover:-translate-y-1 transition-all">
+                                        <img src="src/github/cyberpeacemaker.png" class="w-10 h-10 object-contain rounded-lg">
+                                    </div>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-400 group-hover:text-white text-center leading-tight">Security<br>& Forensic</span>
+                            </a>
 
-            <a href="https://ydnaandy123.github.io/" target="_blank"
-                class="group flex flex-col items-center gap-2 max-w-[100px]">
-                <div class="w-14 h-14 bg-white/95 rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:-translate-y-1 transition-all duration-300 group-hover:shadow-sky-500/20">
-                    <img src="src/github/juitingchien.png" alt="GitHub Icon" class="w-full h-full object-cover">
-                </div>
-                <span class="text-[9px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors text-center leading-tight">
-                    Machine Learning <br> & AI
-                </span>
-            </a>
+                            <a href="https://ydnaandy123.github.io/" target="_blank" class="group flex flex-col items-center gap-3">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-purple-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    <div class="w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-purple-400/50 group-hover:-translate-y-1 transition-all">
+                                        <img src="src/github/juitingchien.png" class="w-10 h-10 object-contain rounded-lg">
+                                    </div>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-400 group-hover:text-white text-center leading-tight">ML<br>& AI</span>
+                            </a>
 
-            <a href="https://github.com/SiNNature" target="_blank"
-                class="group flex flex-col items-center gap-2 max-w-[100px]">
-                <div class="w-14 h-14 bg-white/95 rounded-full flex items-center justify-center shadow-lg overflow-hidden group-hover:-translate-y-1 transition-all duration-300 group-hover:shadow-sky-500/20">
-                    <img src="src/github/sinnature.png" alt="GitHub Icon" class="w-full h-full object-cover">
+                            <a href="https://github.com/SiNNature" target="_blank" class="group flex flex-col items-center gap-3">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-pink-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    <div class="w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-pink-400/50 group-hover:-translate-y-1 transition-all">
+                                        <img src="src/github/sinnature.png" class="w-10 h-10 object-contain rounded-lg">
+                                    </div>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-400 group-hover:text-white text-center leading-tight">Multimedia<br>& Tools</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <span class="text-[9px] font-bold text-slate-500 group-hover:text-sky-400 transition-colors text-center leading-tight">
-                    Multimedia<br>& Tools
-                </span>
-            </a>
-        </div>
-    </div>
             </div>
         </header>
 
@@ -110,7 +123,7 @@
             <div class="md:col-span-2 space-y-4">
 
                 <!-- Cybersecurity Skill Tree -->
-                <section class="glass rounded-3xl p-1 border border-white/5  space-y-2">
+                <section class="glass rounded-3xl p-1 bg-slate-950/40 border border-white/5  space-y-2">
                     <div class="m-4">
                         <h2 class="text-xl font-bold text-white tracking-widest uppercase">Cybersecurity <span
                                 class="text-sky-400">Roadmap</span></h2>
@@ -118,7 +131,7 @@
                     </div>
 
                     <!-- Level 03 -->
-                    <div class="bg-slate-800/20 py-1 rounded-2xl bg-slate-950/40 border border-slate-700/30">
+                    <div class="bg-slate-800/20 py-1 rounded-2xl border border-skyblue-700/30">
                         <div class="flex flex-col items-center text-center mb-3">
                             <span class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em] mb-2">Level
                                 03</span>
@@ -165,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-slate-800/20 py-2 rounded-2xl bg-slate-950/40 border border-slate-700/30">
+                    <div class="bg-slate-800/20 py-2 rounded-2xl border border-skyblue-700/30">
                         <div class="flex flex-col items-center text-center mb-3">
                             <span class="text-[10px] font-bold text-sky-500 uppercase tracking-[0.3em] mb-2">Level
                                 02</span>
@@ -202,7 +215,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-slate-800/20 py-2 rounded-2xl bg-slate-950/40 border border-slate-700/30">
+                    <div class="bg-slate-800/20 py-2 rounded-2xl border border-skyblue-700/30">
                         <div class="flex flex-col items-center text-center mb-10">
                             <span class="text-[10px] font-bold text-sky-500 uppercase tracking-[0.3em] mb-2">Level
                                 01</span>
