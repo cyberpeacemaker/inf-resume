@@ -29,7 +29,19 @@
 </head>
 
 <body class="p-4 md:p-8">
+    <div id="imageModal" 
+        class="fixed inset-0 z-[9999] hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4 cursor-zoom-out transition-opacity duration-300" 
+        onclick="closeModal()">
+        
+        <button class="absolute top-6 right-6 text-white/50 hover:text-white text-3xl transition-colors">
+            <i class="fas fa-times"></i>
+        </button>
 
+        <img id="modalImage" 
+            class="max-w-full max-h-[85vh] md:max-h-[90vh] rounded-lg shadow-2xl transition-all duration-300 transform scale-95 opacity-0 object-contain" 
+            src="" 
+            alt="Full size">
+    </div>
     <div class="max-w-6xl mx-auto space-y-6">
         <!-- Header -->
         <header class="glass rounded-3xl px-6 py-10 md:px-10 border border-white/10 shadow-2xl overflow-hidden relative">
@@ -67,10 +79,11 @@
                                 <i class="far fa-envelope text-sky-400 group-hover:scale-110"></i>
                                 <span class="font-mono">a47u0905@gmail.com</span>
                             </a>
-                            <a href="#" class="flex items-center gap-2 text-slate-400 text-xs hover:text-white transition-all group">
-                                <i class="fab fa-linkedin text-sky-400"></i>
+                            <div class="flex items-center gap-2 text-slate-600 text-xs opacity-90 select-none">
+                                <i class="fab fa-linkedin"></i>
                                 <span class="font-mono">LinkedIn</span>
-                            </a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -509,22 +522,20 @@
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
 
-                        <div
-                            class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all">
+                        <div class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all cursor-zoom-in" 
+                            onclick="openModal('src/military/award-1.png')">
                             <div class="aspect-[2/3] w-full bg-slate-700">
-                                <img src="src/military/award-1.JPG" alt="校園服務"
-                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                                <img src="src/military/award-1.png" alt="校園服務" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
                                     <span class="text-white font-medium">資訊設備盤點</span>
                                 </div>
                             </div>
                         </div>
-
                         <div
-                            class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all">
+                            class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all  cursor-zoom-in"
+                            onclick="openModal('src/military/award-2.png')">
                             <div class="aspect-[2/3] w-full bg-slate-700">
-                                <img src="src/military/award-2.JPG" alt="協助教學"
+                                <img src="src/military/award-2.png" alt="協助教學"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
@@ -534,9 +545,10 @@
                         </div>
 
                         <div
-                            class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all">
+                            class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all cursor-zoom-in"
+                            onclick="openModal('src/military/award-3.png')">
                             <div class="aspect-[2/3] w-full bg-slate-700">
-                                <img src="src/military/award-3.JPG" alt="環境維護"
+                                <img src="src/military/award-3.png" alt="環境維護"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
@@ -546,7 +558,8 @@
                         </div>
 
                         <div
-                            class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all">
+                            class="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-amber-500 transition-all cursor-zoom-in"
+                            onclick="openModal('src/military/app-1.png')">
                             <div class="aspect-[2/3] w-full bg-slate-700">
                                 <img src="src/military/app-1.png" alt="活動支援"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
@@ -559,8 +572,37 @@
 
                     </div>
                 </section>
-            </div>
+            </div>        
+            <script>
+                function openModal(src) {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    
+                    modal.classList.remove('hidden');
+                    modalImg.src = src;
+                    
+                    // 確保圖片載入後再顯示動畫，避免閃爍
+                    setTimeout(() => {
+                        modalImg.classList.remove('scale-95', 'opacity-0');
+                        modalImg.classList.add('scale-100', 'opacity-100');
+                    }, 10);
+                    
+                    document.body.style.overflow = 'hidden';
+                }
 
+                function closeModal() {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    
+                    modalImg.classList.remove('scale-100', 'opacity-100');
+                    modalImg.classList.add('scale-95', 'opacity-0');
+                    
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        document.body.style.overflow = 'auto';
+                    }, 300);
+                }
+            </script>
             <!-- Right Column -->
             <div class="space-y-4">
                 <!-- Education -->

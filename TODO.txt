@@ -2,7 +2,6 @@
 - 獎狀連結檔案
 - LinkedIn先拿掉
 - level cert badge link
-- check all link
 
 # CND
 - cert add 
