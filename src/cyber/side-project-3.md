@@ -14,7 +14,9 @@ IP From
 23.248.249.10 Xiaozhiyun+L.L.C
 ### Phase.3 Trace DNS
 34.104.35.123 edgedl.me.gvt1.com
+![alt text](image.png)
 199.232.214.172 [ctldl.windowsupdate.com, msedge.b.tlu.dl.delivery.mp.microsoft.com]
+![alt text](image-1.png)
 ### Phase.4
 - sysmon
 - pcap + sslkey
@@ -128,5 +130,15 @@ Your system has all the "ingredients" for a **BlackLotus** or similar UEFI bootk
 1.  **Presence of `boot.pnd.stl`**: A known artifact of bootkit staging.
 2.  **Revoked Signature**: Confirmed by VirusTotal, meaning the file is an exploit tool.
 3.  **Clean BCD Path**: This suggests the malware is sitting *underneath* the OS, likely having replaced a core boot file with a vulnerable-but-signed version to maintain stealth.
+![alt text](<Screenshot 2026-03-18 223252.png>)
 
-## File
+# File
+- timestamp
+- artificat string
+- PE Header
+### route.exe
+![alt text](image-2.png)
+### autorun
+![alt text](autorun.png)
+
+### boot.pnd.stl
